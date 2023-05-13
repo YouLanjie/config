@@ -1,0 +1,37 @@
+[$Version]
+update_info=dolphin_detailsmodesettings.upd:rename-leading-padding
+
+[Baloo KEditCommentDialog]
+DP-1 Height 1440x900 DP-1=228
+DP-1 Width 1440x900 DP-1=264
+
+[DetailsMode]
+PreviewSize=16
+
+[General]
+RememberOpenedTabs=false
+Version=202
+ViewPropsTimestamp=2023,1,4,8,38,51.915
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+
+[KPropertiesDialog]
+1440x900 screen: Height=414
+1440x900 screen: Width=499
+DP-1 Height 1440x900 DP-1=408
+DP-1 Width 1440x900 DP-1=428
+Virtual-1 Height 1440x900 Virtual-1=495
+Virtual-1 Width 1440x900 Virtual-1=619
+
+[MainWindow]
+MenuBar=Disabled
+ToolBarsMovable=Disabled
+
+[Open-with settings]
+CompletionMode=1
+History=edge,emac,vim,gnu,mpv
+
+[PreviewSettings]
+Plugins=appimagethumbnail,comicbookthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,jpegthumbnail,kraorathumbnail,windowsimagethumbnail,windowsexethumbnail,opendocumentthumbnail,svgthumbnail,cursorthumbnail,imagethumbnail,fontthumbnail,directorythumbnail,audiothumbnail

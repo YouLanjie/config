@@ -1,0 +1,44 @@
+conky.config = {
+	alignment = 'top_right',
+	background = true,
+        color2 = 'BBFFFF',
+        color3 = 'E6E6FA',
+        color4 = 'A6FFA6',
+	cpu_avg_samples = 2,
+	default_color = 'F9FAF9',
+	double_buffer = true,
+	font = 'Bitstream Vera Sans:size=10',
+	draw_shades = false,
+	gap_x = 10,
+	gap_y = 30,
+	minimum_width = 300,
+	no_buffers = true,
+	own_window = true,
+        update_interval = 1.0,
+        use_xft = true,
+        own_window_type = 'override',
+        --not rely on "Xcompmgr" transparent
+        --own_window_transparent = true,
+        --rely on "xcompmgr" transparent.
+        own_window_transparent = false,
+        own_window_argb_visual = true,
+        own_window_argb_value = 0,
+               
+        }
+conky.text = [[
+$alignr${voffset 3}$color2${font AR PL KaitiM GB:size=48}${time %H:%M:%S}$font
+${voffset -45}$color3${font AR PL KaitiM GB:size=24}${time %b}$font\
+  ${voffset 0}$color3${font AR PL KaitiM GB:size=28}${time %e}$font\
+${voffset 5}$color4$hr
+$alignr$color3${font AR PL KaitiM GB:size=24}${time %A}$font
+#
+${voffset 10}$alignr$color2${font AR PL KaitiM GB:size=17}再不写作业你TM就要完蛋拉！$font
+              ${voffset 20}${color}${font AR PL KaitiM GB:size=24}C${font AR PL KaitiM GB:size=16}pu$font\
+                 ${voffset -16}${font AR PL KaitiM GB:size=24}M${font AR PL KaitiM GB:size=16}em$font\
+$alignr${voffset -18}${font AR PL KaitiM GB:size=24}S${font AR PL KaitiM GB:size=16}wap$font
+$hr 
+                    ${voffset -7}$color4${font AR PL KaitiM GB:size=15}$cpu%$font\
+                      ${voffset 0}$color4${font AR PL KaitiM GB:size=15}$mem  $font\
+$alignr${voffset 0}$color4${font AR PL KaitiM GB:size=15}${swap}/${swapfree}$font
+
+]]

@@ -1,0 +1,44 @@
+#!/usr/bin/zsh
+
+# =======================================
+# 变量
+# =======================================
+bspwm_config_path="$HOME/.config/bspwm/"
+
+# =======================================
+# 基础配置
+# =======================================
+
+# 开启caps lock与ctrl交换
+# =======================================
+sudo loadkeys /usr/local/share/kbd/keymaps/personal.map
+setxkbmap -option 'caps:ctrl_modifier'
+
+# 开启sxhkd
+# =======================================
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+# 工作区
+# =======================================
+bspc monitor -d 1 2 3 4 5 6 7 8 9 10 systemmonitor steam bilibili music terraria minecraft-hmcl minecraft wechat qq
+
+# 边框配置
+# =======================================
+bspc config border_width          2
+bspc config window_gap            5
+
+# 其他设置
+# =======================================
+bspc config split_ratio           0.52
+bspc config borderless_monocle    true
+bspc config gapless_monocle       true
+bspc config top_padding           16
+bspc config bottom_padding        16
+
+
+# 针对窗口的单独设置
+$bspwm_config_path/forwindow.sh
+
+# 自动启动程序
+$bspwm_config_path/autostart.sh
+
