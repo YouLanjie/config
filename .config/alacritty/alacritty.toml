@@ -1,0 +1,79 @@
+live_config_reload = true
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[colors.cursor]
+cursor = "#fcfcfc"
+text = "CellBackground"
+
+[colors.normal]
+black = "#1e2021"
+blue = "#1d99f3"
+cyan = "#1abc9c"
+green = "#11d116"
+magenta = "#9b59b6"
+red = "#ed1515"
+white = "#fcfcfc"
+yellow = "#f67400"
+
+[colors.primary]
+background = "#1E2021"
+foreground = "#fcfcfc"
+
+[colors.selection]
+background = "#4e5051"
+text = "CellForeground"
+
+[font]
+size = 13.0
+
+[font.bold]
+family = "JetBrains Mono"
+style = "Bold"
+
+[font.bold_italic]
+family = "JetBrains Mono"
+style = "Bold Italic"
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+[font.italic]
+family = "JetBrains Mono"
+style = "Italic"
+
+[font.normal]
+family = "JetBrains Mono"
+style = "Regular"
+
+[font.offset]
+x = 0
+y = 0
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "command"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "command"
+
+[scrolling]
+history = 100000
+multiplier = 7
+
+[selection]
+save_to_clipboard = true
+semantic_escape_chars = ",│`|:\"' ()[]{}<>"
+
+[window.padding]
+x = 2
+y = 2
+
+# [window.size]
+# x = 80
+# y = 24
